@@ -1,0 +1,14 @@
+Well done!
+
+2.
+a) -0.5
+There's no such condition as "=NULL". NULL can only be compared with "is NULL".
+
+3.
+b) -0.5
+Why do you need GROUP BY?
+
+c) -0.75
+WHERE clause is not needed. Also, all can be done in one query by another join.
+
+Mark: 8
