@@ -1,0 +1,24 @@
+1
+
+SELECT *
+FROM Drivers
+WHERE experience !=  IN (3, 5, 6, 10) AND Plase_on_registration = 'eee'
+
+2
+
+SELECT a.#Pasport
+FROM a.Drivers
+	LEFT JOIN b.control_room ON a.Driver_cod = b.Driver_cod
+WHERE b.Ticket IS NULL
+
+3
+
+SELECT a.Car_registration_number,
+               b.Arrival_time,
+               b.Departure time,
+               c.Destination
+FROM a.Car
+	INNER JOIN b.control_room ON a.Car_cod = b.Car_cod (SELECT c.Destination
+						      FROM c.route
+						                   INNER JOIN b.control_room ON c.route code = b.route code)
+WHERE a.Year of issue = 2015
