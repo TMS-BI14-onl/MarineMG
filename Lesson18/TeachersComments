@@ -1,0 +1,18 @@
+Well done!
+
+2
+-1
+You asked to show salary for every department, not for the whole dataset.
+
+3
+-0.5
+Why do we need subquery?
+
+4
+-1
+We need one query.
+Correct answer:
+SELECT department_name, (AVG(salary) OVER (PARTITION BY department_id)/AVG(salary) OVER ())*100 AS diff_pct
+FROM Employees e JOIN Departments d ON dep.department_id=emp.department_id
+
+Mark: 8
